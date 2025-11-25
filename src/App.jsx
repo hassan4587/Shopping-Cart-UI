@@ -1,11 +1,14 @@
-import React from 'react'
-
+import React from "react";
+import { useState, useEffect } from "react";
+import ProductsList from "./assets/components/ProductsList";
 const App = () => {
   return (
-    <div>
-      Shopping Cart UI
-    </div>
-  )
-}
+    <div className="min-h-screen bg-gray-100 p-6">
+      <h1 className="text-3xl font-bold mb-6">🛒 Products Catalogue</h1>
 
-export default App
+      <ProductsList />
+    </div>
+  );
+};
+
+export default App;
